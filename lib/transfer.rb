@@ -3,7 +3,7 @@ require_relative "./bank_account.rb"
 
 
 class Transfer
-  @@all = []
+  # @@all = []
   attr_accessor :sender, :receiver, :status, :amount
   def initialize (sender, receiver, status = "pending", amount)
     @sender = sender
@@ -11,7 +11,7 @@ class Transfer
     @status = status
     @amount = amount
 
-    @@all << self
+    # @@all << self
   end 
 
   def valid? 
